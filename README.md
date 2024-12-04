@@ -1,27 +1,45 @@
-# AngularClientApp
+# Angular Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+This repository contains the code for an Angular 18 client-side web application that meets the assignment requirements, including navigation, API consumption, reactive forms, and deployment to a public hosting platform.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## **Project Overview**
 
-## Code scaffolding
+The application consists of three main pages:
+1. **Home Page**: A landing page with introductory text.
+2. **API Data Page**: Displays data fetched from a public API using Angular's HttpClient service.
+3. **Form Page**: A reactive form for submitting feedback.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Additionally, the application uses a **JSON Server** to simulate a REST API for local testing and development.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## **Features**
 
-## Running unit tests
+### **1. Navigation**
+- Implements a navigation bar with links to:
+  - Home
+  - API Data
+  - Form
+- Uses Angular Router for seamless client-side navigation.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### **2. Pages**
+- **Home Page**: Contains a welcome message and a brief description of the application.
+- **API Data Page**:
+  - Consumes data from a public API.
+  - Displays the fetched data dynamically.
+  - Uses Angular Service and HttpClient for API requests.
+- **Form Page**:
+  - Implements a reactive form with the following fields:
+    - Name (required)
+    - Email (required, valid format)
+    - Message (required, minimum length: 10 characters)
+  - Provides validation feedback to users for incorrect inputs.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### **3. JSON Server (Fake API)**
+- A **JSON Server** is set up to act as a fake API for local testing.
+- A JSON file (`db.json`) in the `data` folder serves as the database.
+- Command to run the JSON server:
+  ```bash
+  npx json-server --watch data/db.json --port 4201
