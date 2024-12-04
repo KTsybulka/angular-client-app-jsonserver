@@ -1,1 +1,200 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles - Additions for Form and Submitted Data */
+
+/* Form Container */
+form {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form Labels */
+form label {
+    font-weight: bold;
+    color: #004080; /* Dark blue text */
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Form Inputs */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #004080; /* Dark blue border on focus */
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 64, 128, 0.3);
+}
+
+/* Submit Button */
+form button {
+    background-color: #004080; /* Dark blue background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0059b3; /* Lighter blue on hover */
+}
+
+form button:disabled {
+    background-color: #ccc; /* Gray background when disabled */
+    cursor: not-allowed;
+}
+
+/* Error Messages */
+form small {
+    color: #d9534f; /* Red for error messages */
+    font-size: 0.9rem;
+}
+
+/* Submitted Data Display */
+.submitted-data {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #e6f7ff; /* Light blue background */
+    border: 1px solid #004080; /* Dark blue border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submitted-data h3 {
+    color: #004080; /* Dark blue header */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.submitted-data p {
+    font-size: 1rem;
+    color: #333; /* Dark gray text */
+}
+
+/* User List */
+.user-list {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 15px;
+    background-color: #f7f7f7; /* Light gray background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px;
+}
+
+.user-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #004080; /* Dark blue text */
+}
+
+.user-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Existing Navigation Styles */
+nav {
+    background-color: #004080; /* Dark blue background */
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Space links evenly */
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* White text color */
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0059b3; /* Lighter blue on hover */
+}
+
+nav a.active {
+    background-color: #003366; /* Even darker blue for active links */
+    font-weight: bold;
+}
+
+/* Header and Paragraph Styles */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #004080;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Styles for Submitted Data */
+.submitted-data {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #e6f7ff; /* Light blue background */
+    border: 1px solid #004080; /* Dark blue border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.submitted-data h3 {
+    font-size: 1.5rem;
+    color: #004080; /* Dark blue for the header */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.submitted-data p {
+    font-size: 1rem;
+    color: #333; /* Dark gray for text */
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.submitted-data p strong {
+    font-weight: bold;
+    color: #004080; /* Highlight key labels */
+}

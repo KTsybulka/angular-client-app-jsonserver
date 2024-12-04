@@ -1,0 +1,25 @@
+{
+  "submissions": [
+    {
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "message": "I’m interested in learning more about your services."
+    },
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "message": "Can you provide more details about the upcoming event schedule?"
+    },
+    {
+      "name": "Emily Smith",
+      "email": "emily.smith@example.com",
+      "message": "I’d like to request support for an issue I’m experiencing with your product."
+    },
+    {
+      "id": "4aae",
+      "name": "Kirill Tsybulka",
+      "email": "shpondoors@yandex.ru",
+      "message": "safdsdddddddddddddd"
+    }
+  ]
+}

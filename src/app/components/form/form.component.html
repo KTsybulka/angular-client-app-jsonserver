@@ -1,0 +1,56 @@
+<form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name" />
+      @if (feedbackForm.get('name')?.invalid && feedbackForm.get('name')?.touched) {
+        <div>
+          @if (feedbackForm.get('name')?.errors?.['required']) {
+            <small>Name is required.</small>
+          }
+        </div>
+      }
+    </div>
+  
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" />
+      @if (feedbackForm.get('email')?.invalid && feedbackForm.get('email')?.touched) {
+        <div>
+          @if (feedbackForm.get('email')?.errors?.['required']) {
+            <small>Email is required.</small>
+          }
+          @if (feedbackForm.get('email')?.errors?.['email']) {
+            <small>Enter a valid email.</small>
+          }
+        </div>
+      }
+    </div>
+  
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" formControlName="message"></textarea>
+      @if (feedbackForm.get('message')?.invalid && feedbackForm.get('message')?.touched) {
+        <div>
+          @if (feedbackForm.get('message')?.errors?.['required']) {
+            <small>Message is required.</small>
+          }
+          @if (feedbackForm.get('message')?.errors?.['minlength']) {
+            <small>Message must be at least 10 characters.</small>
+          }
+        </div>
+      }
+    </div>
+  
+    <button type="submit" [disabled]="feedbackForm.invalid">Submit</button>
+  </form>
+
+
+
+  @if (submittedData) {
+    <div class="submitted-data">
+      <h3>Submitted Data:</h3>
+      <p><strong>Name:</strong> {{ submittedData.name }}</p>
+      <p><strong>Email:</strong> {{ submittedData.email }}</p>
+      <p><strong>Message:</strong> {{ submittedData.message }}</p>
+    </div>
+  }
